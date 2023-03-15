@@ -16,7 +16,7 @@ class Notes(models.Model):
         verbose_name = "notes"
         verbose_name_plural = "notes"
 
-    
+ ########################Homework Model##############################   
 class Homework(models.Model):
         user = models.ForeignKey(User, on_delete=models.CASCADE) 
         subject = models.CharField(max_length=50)
@@ -29,4 +29,9 @@ class Homework(models.Model):
         def __str__(self):
             return self.title
 
-         
+  ######################Todo Model##############################  
+class Todo(models.Model):
+     user = models.ForeignKey(User, on_delete=models.CASCADE)  
+     title = models.CharField(max_length=100)
+     is_finished = models.BooleanField(default=False) 
+

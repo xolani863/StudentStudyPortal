@@ -11,5 +11,10 @@ urlpatterns = [
     # path('update_homework/<int:pk>',views.update_homework, name="update-homework"),
     # path('delete_homework/<int:pk>',views.delete_homework, name="delete-homework"),
 
+    #####################Youtube Urls#################################################
     path('youtube',views.youtube,name="youtube"),
+
+
+     #####################todo Urls#################################################
+    path('todo',views.todo,name="todo"),
 ]
